@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu{
+    text-decoration: none;
+}
+.header_menu a{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #444;
+}
+.header_menu a:hover{
+    color:#5f9ea0
+}
