@@ -1,0 +1,23 @@
+.sidebar{
+    width:25%;
+        background:#fff
+
+}
+.cardHeader{
+    text-align:center;
+    padding:10px 0;
+    color:#565673;
+    box-sizing:border-box;
+    font-size:15px;
+}
+.recentPost h3{
+    font-weight:500;
+    color:#666;
+    letter-spacing: 1px;
+    font-size:15px;
+    margin:0;
+}
+.recentPost span{
+    font-size:10px;
+    font-weight:500;
+}
