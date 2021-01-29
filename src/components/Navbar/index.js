@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
+import {NabLink, NavLink} from 'react-router-dom'
 import './style.css'
 import Search from '../../assets/img/search.png'
 
@@ -15,10 +16,10 @@ export default function Navbar() {
         <>
             <div className='navbar'>
                 <ul className='navbar_menu'>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Posts</a></li>
-                    <li><a href='#'>Contact</a></li>
+                    <li><NavLink to='/'>Home</NavLink></li>
+                    <li><NavLink to ='#'>About</NavLink></li>
+                    <li><NavLink to ='/post'>Posts</NavLink></li>
+                    <li><NavLink to ='/contact'>Contact</NavLink></li>
                 </ul>
                 <div className='search'>
                     <input type='text'
