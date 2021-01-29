@@ -5,13 +5,23 @@ import BlogData from '../../data/blog.json'
 
 export default function BlogPost(props) {
 
-    
-    const [post,setPost] = useState({})
+    const initialData = {
+        id:1,
+        blogCategory:'',
+        blogTitle: '',
+        slug: '',
+        postedOn: '',
+        author: '',
+        blogImage:'' ,
+        blogText:''
+    }
+
+    const [post,setPost] = useState(initialData)
     const [postId, setPostId] = useState('')
     
     useEffect(() => {
         const postId = props.match.params.postId
-            const post = BlogData.data.find(post => post.id == postId)
+        const post = BlogData.data.find(post => post.id == postId)
         setPost(post)
         setPostId(postId)
         },[post,props.match.params.postId])
