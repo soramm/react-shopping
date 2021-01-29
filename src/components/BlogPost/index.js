@@ -7,12 +7,14 @@ export default function BlogPost(props) {
 
     
     const [post,setPost] = useState({})
+    const [postId, setPostId] = useState('')
     
     useEffect(() => {
         const postId = props.match.params.postId
             const post = BlogData.data.find(post => post.id == postId)
-            setPost(post)
-        },post)
+        setPost(post)
+        setPostId(postId)
+        },[post,props.match.params.postId])
         
         console.log(post)
     return (
